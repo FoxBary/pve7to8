@@ -109,7 +109,7 @@ echo "Proxmox VE 7.4 已更新到最新 / Proxmox VE 7.4 updated to latest." | t
 # 步骤 8：安装常用工具 / Step 8: Install common tools
 print_step 8 "安装常用工具 / Installing common tools"
 show_progress "正在安装 / Installing"
-apt update -y && apt install -y screen curl wget unzip zip cron nano vim
+apt install -y screen curl wget unzip zip cron nano vim
 check_status "常用工具安装 / Common tools installation"
 echo "已安装工具 / Installed tools: screen, curl, wget, unzip, zip, cron, nano, vim" | tee -a "$LOG_FILE"
 
